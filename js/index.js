@@ -56,6 +56,7 @@ function searchByAmount() {
 nameFilter.addEventListener('input', searchByName);
 amountFilter.addEventListener('input', searchByAmount);
 
+// Function to update the chart
 function updateChart(transactions) {
     const labels = transactions.map(transaction => transaction.date);
     const data = transactions.map(transaction => transaction.amount);
